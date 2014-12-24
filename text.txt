@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 test
 add new line
 add new line 2
 add new line 3
+=======
+<<<<<<< HEAD
+test
+=======
+test
+add new line
+>>>>>>> origin/temp2
+>>>>>>> origin/temp
