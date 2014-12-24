@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 test
+=======
+<<<<<<< HEAD
+test
+=======
+test
+add new line
+>>>>>>> origin/temp2
+>>>>>>> cabdd9f49ee4e2335b8d399914a0c976b7fab14a
