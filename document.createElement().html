@@ -1,0 +1,75 @@
+<!-- Creates an Element node
+
+
+
+--><!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function createDiv()
+		{
+			elem = document.getElementsByClassName("right-side")[0];
+			var x = document.createElement("div");
+			x.innerText = "new div element";
+			x.setAttribute("class", "elem");
+			elem.appendChild(x);
+		}
+		function createButton()
+		{
+			elem = document.getElementsByClassName("right-side")[0];
+			var x = document.createElement("button");
+			x.innerText = "new button";
+			x.setAttribute("class", "elem");
+			elem.appendChild(x);
+		}
+		function createLink1()
+		{
+			elem = document.getElementsByClassName("right-side")[0];
+			var a = document.createElement("a");
+			var href = document.createAttribute("href");
+			href.value = "https://www.google.com.vn/";
+			a.innerText = "new link 1";
+			a.setAttributeNode(href);
+			elem.appendChild(a);
+		}
+		function createLink2()
+		{
+			elem = elem = document.getElementsByClassName("right-side")[0];
+			var a = document.createElement("a");
+			a.href = "https://www.google.com.vn/";
+			a.innerText = "new link 2";
+			elem.appendChild(a);
+		}
+	</script>
+	<style>
+		.elem{
+			border: 1px solid green;
+			padding: 5px;
+			margin: 5px;
+		}
+		a{
+			border: 1px solid green;
+			padding: 5px;
+			margin: 5px;
+		}
+		.left-side{
+			float: left;
+		}
+		.right-side{
+			width: 600px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="left-side">
+		<input type="button" value="Create new button" onclick="createButton()" />
+		<input type="button" value="Create new DIV element" onclick="createDiv()"/>
+		<input type="button" value="Create new link v1" onclick="createLink1()"/>
+		<input type="button" value="Create new link v2" onclick="createLink2()"/>
+	</div>
+	<div class="right-side">
+	</div>
+</body>
+</html>
